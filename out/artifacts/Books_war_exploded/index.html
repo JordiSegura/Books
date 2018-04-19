@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+<form>
+    <!-- el for de label lo relaciona con el id de select-->
+    <label for="libros">Libros disponibles</label>
+    <select id="libros" onchange="mostrarDescripcion()">
+        <option selected>Seleccionar</option>
+        <option>Catedral del mar</option>
+        <option>Aquella orilla nuestra</option>
+        <option>Libro 3</option>
+        <option>Libro 4</option>
+
+    </select>
+</form>
+<div id="desc"></div>
+<script src="js/programa.js"></script>
+</body>
+</html>
